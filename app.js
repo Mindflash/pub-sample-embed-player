@@ -29,7 +29,9 @@ app.use(function (ctx, next) {
 app.use(require('./helpers/verifyAuthCreds'));
 
 app.use(require('./routes/index').routes());
-	
+app.use(require('./routes/courseDetail').routes());
+app.use(require('./routes/viewCourse').routes());
+
 if (process.env.NODE_ENV === 'test') {
   module.exports = app.callback();
 } else {

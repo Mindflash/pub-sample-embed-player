@@ -1,2 +1,15 @@
+<% courses.forEach(function(course) { %>
 
+<div class="CourseTile">
+  <div class="course-tile-inner">
+    <div class="course-tile-thumb"
+          style="background-image: url('<%= course.thumbUrl %>');"></div>
+    <div class="course-tile-collapse">
+      <p class="course-tile-title"><%= course.name %></p>
+      <p class="course-tile-desc pre"><%= course.desc %></p>
+      <a class="button-primary" href="/course-detail/<%= course.id %>">Learn More</a>
+    </div>
+  </div>
+</div>
 
+<% }) %>
