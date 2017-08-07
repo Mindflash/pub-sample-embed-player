@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+.button-primary {
+  height: 30px;
+  color: #ddd;
+  background: linear-gradient(180deg, rgb(1, 120, 209) 0, rgb(29, 50, 116) 100%);
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 300;
+  letter-spacing: .1em;
+  padding: 0 15px;
+}
