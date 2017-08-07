@@ -3,9 +3,21 @@ Trainee overview and embed player sample implementation
 
 This project is meant to demonstrate a minimum Mindflash trainee overview and embed player implementation based on a beta extended API.
 
+### How to run
+This project required NodeJS 8+ https://nodejs.org/
+After cloning the repo, install depenencies with
+```
+npm install
+```
+Edit `config.js` and put your API secret key in. Now start the server with
+```
+npm start
+```
+The server should start listening on port 7001. Open a browser and point to `http://localhost:7001?testEmail=a-trainee-in-your-portal@example.com`. Be sure to use the email address of a user in your Mindflash account. This simulates the connection between your system and Mindflash.
 
 ### Obtaining a user token
 **GET**  `https://xapi.mindflash.com/v3a/token?email=<trainee email>`
+
 **GET**  `https://xapi.mindflash.com/v3a/token?id=<trainee id>`
 
 This endpoint returns basic user info along with a time-limited token you can use in other extended API calls. This token is specific to the user and expires after 90 minutes. This token is designed to be sent to a client single-page app, allowing it to make extended API calls directly. Of course, the token can still be used in a server-rendered app such as in this sample project.
