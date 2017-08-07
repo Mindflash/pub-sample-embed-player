@@ -24,8 +24,6 @@ module.exports = async function verifyAuthCreds(ctx, next) {
 			headers: { 'x-mindflash-Apikey': cfg.mfKey }
 		});
 
-		console.log('creds', creds)
-
 		//Write the creds into a cookie for later use
 		ctx.cookies.set('mfCreds', JSON.stringify(creds), { maxAge: maxTokenAge });
 		ctx.state.creds = creds;

@@ -13,7 +13,7 @@ Edit `config.js` and put your API secret key in. Now start the server with
 ```
 npm start
 ```
-The server should start listening on port 7001. Open a browser and point to `http://localhost:7001?testEmail=a-trainee-in-your-portal@example.com`. Be sure to use the email address of a user in your Mindflash account. This simulates the connection between your system and Mindflash.
+The server should start listening on port 7001. Open a browser and point to `http://localhost:7001?testEmail=a-trainee-in-your-portal@example.com`. Be sure to use the email address of a user in your Mindflash account. This simulates the connection between your system and Mindflash. In a real implementation, you should use a signed url (like a JWT) or somehow directly supply the userId/email to verifyAuthCreds.js.
 
 ### Obtaining a user token
 **GET**  `https://xapi.mindflash.com/v3a/token?email=<trainee email>`
