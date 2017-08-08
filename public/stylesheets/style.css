@@ -182,7 +182,7 @@ h2 {
 .CourseEmbed iframe {
 	width: 100%;
 	height: 100%;
-	min-height: 500px;
+	min-height: 600px;
 	border: 1px solid #eee;
 	margin: 5px 0;
 }
