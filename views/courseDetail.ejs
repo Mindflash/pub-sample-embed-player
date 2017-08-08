@@ -1,14 +1,17 @@
 <div class="CourseDetail">
   <a class="closeLink" href="/">« Back</a>
-  <div class="course-detail-thumb"
-        style="background-image: url('<%= course.thumbUrl %>');"></div>
-  <div class="course-detail-items">
-    <h2><%= course.name %></h2>
-    <p class="pre"><%= course.desc %></p>
+  <div class="courseHeadBlock">
+    <div class="course-detail-items">
+      <h2><%= course.name %></h2>
+      <p class="pre"><%= course.desc %></p>
+    </div>
+    <div class="course-detail-thumb"
+          style="background-image: url('<%= course.thumbUrl %>');"></div>
     <div class="course-detail-actions">
+      <h2>Modules</h2>
       <% course.modules.forEach(function(mod) { %>
       <div>
-        <p><%= mod.name %></p>
+        <p class="modName"><%= mod.name %></p>
         <p><%= mod.gradeStatus || mod.status %></p>
         <% if (!mod.locked) { %>
         <a class="button-primary" href="/view-course/<%= mod.id %>/<%= course.id %>">View Module</a>
