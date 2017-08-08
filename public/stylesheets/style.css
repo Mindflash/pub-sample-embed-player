@@ -27,7 +27,7 @@ h2 {
 .button-primary {
 	height: 30px;
 	color: #ddd;
-	background: linear-gradient(180deg, rgb(1, 120, 209) 0, rgb(29, 50, 116) 100%);
+	background: linear-gradient(180deg, rgb(120, 120, 120) 0, rgb(60, 60, 60) 100%);
 	border: 0;
 	font-size: 14px;
 	cursor: pointer;
@@ -48,6 +48,7 @@ h2 {
 	width: 250px;
 	height: 400px;
 	position: relative;
+	display: inline-block;
 }
 
 .course-tile-inner {
@@ -67,7 +68,7 @@ h2 {
 }
 
 .course-tile-collapse .course-tile-title {
-	color: #4090d0;
+	color: #4d4d4d;
 	font-size: 18px;
 	padding: 15px 0;
 }
