@@ -8,6 +8,7 @@ router.get('/view-course/:modId/:courseId', async function (ctx) {
 	const course = await request(`https://xapi.mindflash.com/v3a/launch-course/${modId}/${courseId}`);
 
 	ctx.state.course = course;
+	ctx.state.backUrl = `/course-detail/${courseId}`;
 
 	return ctx.render('viewCourse');
 });

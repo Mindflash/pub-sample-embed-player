@@ -1,4 +1,13 @@
 <div class="CourseEmbed">
-  <a class="closeLink" href="/">« Back</a>
-  <iframe class="embed-player" src="<%=course.url%>"></iframe>
+  <a class="closeLink" href="<%= backUrl %>">« Back</a>
+  <iframe class="embed-player" src="<%= course.url %>"></iframe>
+  <script>
+    // The embedded player send this message on close
+		window.addEventListener("message", function (msg) {
+			console.log('message received', msg);
+			if (msg.data === 'playerDone') {
+				window.location = '<%= backUrl %>';
+			}
+		});
+  </script>
 </div>

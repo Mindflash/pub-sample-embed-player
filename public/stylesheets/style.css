@@ -27,6 +27,27 @@ h2 {
 	color: #333;
 }
 
+.header {
+	background: #ccc;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.page-outer {
+	position: relative;
+}
+.left-nav {
+	background: #ddd;
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	min-height: 500px;
+}
+
+.body-content {
+	margin:0 0 0 100px;
+}
+
 .button-primary {
 	height: 30px;
 	color: #fff;
@@ -101,8 +122,8 @@ h2 {
 
 .CourseDetail {
 	position: relative;
-	width: 620px;
-	margin: 40px;
+	width: 700px;
+	padding: 40px;
 }
 
 .course-detail-thumb {
@@ -133,8 +154,6 @@ h2 {
 	float: left;
 }
 
-
-
 .course-detail-actions > div {
 	border-top: 1px solid #ddd;
 	margin-bottom: 20px;
@@ -142,23 +161,23 @@ h2 {
 	position: relative;
 }
 
-	.course-detail-actions h2 {
-		margin-top: 1em;
-	}
+.course-detail-actions h2 {
+	margin-top: 1em;
+}
 
-		.course-detail-actions div .modStuff {
-			float: left
-		}
+.course-detail-actions div .modStuff {
+	float: left
+}
 
-		.course-detail-actions div .modName {
-			color: #000;
-			font-size: 1.1em;
-		}
+.course-detail-actions div .modName {
+	color: #000;
+	font-size: 1.1em;
+}
 
-		.course-detail-actions div a {
-			float:  right;
-			margin-top: 20px;
-		}
+.course-detail-actions div a {
+	float: right;
+	margin-top: 20px;
+}
 
 .CourseEmbed iframe {
 	width: 100%;
