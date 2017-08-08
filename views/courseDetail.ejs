@@ -11,8 +11,10 @@
       <h2>Modules</h2>
       <% course.modules.forEach(function(mod) { %>
       <div>
-        <p class="modName"><%= mod.name %></p>
-        <p><%= mod.gradeStatus || mod.status %></p>
+        <div class="modStuff">
+          <p class="modName"><%= mod.name %></p>
+          <p><%= mod.gradeStatus || mod.status %></p>
+        </div>
         <% if (!mod.locked) { %>
         <a class="button-primary" href="/view-course/<%= mod.id %>/<%= course.id %>">View Module</a>
         <% } %>

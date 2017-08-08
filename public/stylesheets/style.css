@@ -135,15 +135,30 @@ h2 {
 
 
 
-.course-detail-actions div {
-border-top: 1px solid #ddd;
-margin-bottom: 20px;
+.course-detail-actions > div {
+	border-top: 1px solid #ddd;
+	margin-bottom: 20px;
+	overflow: auto;
+	position: relative;
 }
 
-	.course-detail-actions div .modName {
-		color: #000;
-		font-size: 1.1em;
+	.course-detail-actions h2 {
+		margin-top: 1em;
 	}
+
+		.course-detail-actions div .modStuff {
+			float: left
+		}
+
+		.course-detail-actions div .modName {
+			color: #000;
+			font-size: 1.1em;
+		}
+
+		.course-detail-actions div a {
+			float:  right;
+			margin-top: 20px;
+		}
 
 .CourseEmbed iframe {
 	width: 100%;
