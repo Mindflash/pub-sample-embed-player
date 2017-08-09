@@ -1,20 +1,25 @@
+html {
+	height: 100%;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body, input, button {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	line-height: 19px;
 	height: 100%;
 }
 
 body {
 	padding: 0;
 	margin: 0;
-	color: #666;
+	color: #888;
 }
 
 a {
-	color: #7d7d7d;
+	color: #1a5;
 }
 
 .pre {
@@ -22,61 +27,80 @@ a {
 }
 
 h2 {
-	margin-top: 50px;
-	font-weight: 500;
-	color: #333;
+	margin-top: 30px;
+	font-weight: 300;
+	color: #666;
+	font-size: 21px;
+	line-height: 28px;
 }
 
 .header {
-	background: #ccc;
-	padding: 10px 20px;
-	text-align: right;
+	background-color: #fff;
+    padding: 80px 20px 0;
+    text-align: right;
+	height: 119px;
+	font-size: 15px;
+	border-bottom: 1px #ddd solid;
+	background-image: url('../images/AceSoft-Brand.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 240px 120px;
 }
 
 .page-outer {
 	position: relative;
+	height: calc(100% - 120px);
 }
 .left-nav {
-	background: #ddd;
+	background: #fcfcfc;
 	position: absolute;
-	width: 100px;
+	width: 209px;
 	height: 100%;
 	min-height: 500px;
+	border-right: #ddd 1px solid;
+	background-image: url('../images/AceSoft-LeftNav.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 240px 270px;
 }
 
 .body-content {
-	margin:0 0 0 100px;
+	position: absolute;
+	left: 250px;
+	top: 0px;
+	height: 100%;
+	width: calc(100% - 250px);
+	overflow: auto;
 }
 
 .button-primary {
 	height: 30px;
 	color: #fff;
-	background: #777 /*linear-gradient(180deg, rgb(120, 120, 120) 0, rgb(60, 60, 60) 100%)*/;
+	background: #1a5 /*linear-gradient(180deg, rgb(120, 120, 120) 0, rgb(60, 60, 60) 100%)*/;
 	border: 0;
 	font-size: 14px;
 	cursor: pointer;
-	border-radius: 0px;
+	border-radius: 3px;
 	font-weight: 300;
 	padding: 7px 15px;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	line-height: 15px;
 }
 
 .CourseTile {
 	user-select: none;
-	border: 1px solid #eee;
-	border-left: 0;
-	border-top: 0;
-	width: 600px;
+	border-bottom: 1px solid #ddd;
+	width: 760px;
 	overflow: auto;
 	position: relative;
-	display: inline-block;
+	display: block;
+
 }
 
 .course-tile-inner {
-	padding: 20px;
-	width: 560px;
+	padding: 40px 0;
 	overflow: auto;
 }
 
@@ -86,22 +110,26 @@ h2 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	border: 2px #e6e6e6 solid;
-	border-radius: 6px;
+	border: 1px #e6e6e6 solid;
 	float: left;
+	border-radius: 4px;
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.08);
+	box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.08);
 }
 
 .course-tile-collapse {
 	float: left;
-	padding-left: 20px;
-	max-width: 310px;
+	padding-left: 40px;
+	max-width: 550px;
 }
 
 .course-tile-collapse .course-tile-title {
-	color: #4d4d4d;
-	font-size: 18px;
+	color: #666;
+	font-size: 21px;
 	padding: 0 0 .5em;
-	margin-top: 0;
+	margin-top: 0em;
+	font-weight: 300;
 }
 
 .course-tile-collapse .course-tile-desc {
@@ -123,13 +151,15 @@ h2 {
 .CourseDetail {
 	position: relative;
 	width: 700px;
-	padding: 40px;
+	padding: 40px 10px;
 }
 
 .course-detail-thumb {
-	width: 300px;
-	height: 214px;
-	float: left;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 214px;
+    float: left;
 }
 
 .closeLink {
@@ -179,10 +209,19 @@ h2 {
 	margin-top: 20px;
 }
 
+.CourseEmbed {
+	padding-right: 40px;
+    padding-top: 20px;
+}
+
+.CourseEmbed .closeLink {
+	margin-bottom: 20px;
+}
+
 .CourseEmbed iframe {
 	width: 100%;
 	height: 100%;
 	min-height: 600px;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	margin: 5px 0;
 }
