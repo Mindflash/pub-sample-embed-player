@@ -1,11 +1,11 @@
 # pub-sample-embed-player
 Trainee overview and embed player sample implementation
 
-This project is meant to demonstrate a minimum Mindflash trainee overview and embed player implementation based on a beta extended API.
+This project is meant to demonstrate a minimum Mindflash trainee overview and embed player implementation.
 
 ### How to run
 This project required NodeJS 8+ https://nodejs.org/
-After cloning the repo, install depenencies with
+After cloning the repo, install dependencies with
 ```
 npm install
 ```
@@ -100,7 +100,7 @@ This endpoint returns comprehensive data about the courses a trainee has access 
 ```
 
 There are a few things to take note of here:
-* This follows the simpler model of modules-in-courses instead of the current courses-in-series. Mostly this is just renaming courses to modules and series to courses and allow inviting only to courses, not directly to modules. This sadly could be a source of confusion as we transition over to the new model, but does make things easier to understand in the long run.
+* This follows the simpler model of modules-in-courses. Mostly this is just renaming courses to modules and series to courses and allow inviting only to courses, not directly to modules. This could be a source of confusion as we transition over to the new model, but does make things easier in the long run.
   - One caveat is if you have trainees invited to a course which is not part of a series, it will not show up in this result -- always use series for best results and easier transition later.
 * `locked` indicates if a module (formerly course) is currently accessible in the course (formerly series). In courses which have an enforced order, `locked` will be true on a module if the trainee has not passed the previous modules.
 * All IDs are strings, in contrast to our previous API. Do not coerce the IDs to numbers; a future revision may make use of non-numeric IDs.
