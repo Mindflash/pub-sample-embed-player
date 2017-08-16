@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-		<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-		<title>
-			Mindflash Sample: Embed Player
-		</title>
-		<link rel='stylesheet' href='/stylesheets/style.css' />  
-	</head>
-  <body>
-	  <%- include('common/header') %>
-    <%- include('common/pageBegin') %>
+<head>
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <title>
+    Mindflash Sample: Embed Player
+  </title>
+  <link rel="stylesheet" href="/css/vendor/foundation.css">
+  <link rel='stylesheet' href='/css/style.css'/>
+</head>
+<body>
+<div class="page-outer">
+  <%- include('common/header') %>
+  <%- include('common/pageBegin') %>
 
-    <%- body %>
+  <%- body %>
 
-    <%- include('common/pageEnd') %>
-  </body>
+  <%- include('common/pageEnd') %>
+</div>
+
+<script src="/js/vendor/jquery.js"></script>
+<script src="/js/vendor/what-input.js"></script>
+<script src="/js/vendor/foundation.js"></script>
+<script>$(document).foundation()</script>
+</body>
 </html>
