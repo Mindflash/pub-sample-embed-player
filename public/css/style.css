@@ -1,5 +1,15 @@
 html, body {
 	height: 100%;
+	font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 
 * {
@@ -7,7 +17,6 @@ html, body {
 }
 
 body, input, button {
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	line-height: 19px;
 }
 
@@ -55,6 +64,7 @@ h2 {
 .page-inner {
 	flex: 1;
 	display: flex;
+	background: rgb(245,245,245)
 }
 
 .left-nav {
@@ -237,4 +247,38 @@ h2 {
 	min-height: 600px;
 	border: 1px solid #ddd;
 	margin: 5px 0;
+}
+
+
+/* index.ejs layout */
+
+.trainingContainer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.trainingItem {
+	margin: 1.5rem .75rem;
+	border: none;
+	box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
+.trainingItem h4 {
+	margin-bottom: 1.5em;
+	color: rgb(90, 90, 90);
+	font-weight: 100;
+}
+
+.trainingItem p {
+	margin-bottom: 3em;
+	color: rgb(120, 120, 120)
+}
+
+.trainingItem .card-section {
+	padding: 2rem;
+}
+
+.trainingItem .card-divider {
+	padding: 2rem;
+	background: rgb(248,248,248)
 }

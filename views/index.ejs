@@ -1,15 +1,19 @@
-<% courses.forEach(function(course) { %>
-
-<div class="CourseTile">
-  <div class="course-tile-inner">
-    <div class="course-tile-thumb"
-          style="background-image: url('<%= course.thumbUrl %>');"></div>
-    <div class="course-tile-collapse">
-      <p class="course-tile-title"><%= course.name %></p>
-      <p class="course-tile-desc pre"><%= course.desc %></p>
-      <a class="button-primary" href="/course-detail/<%= course.id %>">Learn More</a>
+<div class="row align-left expanded small-up-1 medium-up-2 xlarge-up-3 trainingContainer">
+  
+  <% courses.forEach(function(course) { %>
+    <div class="column flex-container align-left">
+      <div class="card trainingItem">
+        <img class="courseThumb" src="<%= course.thumbUrl %>" />
+        <div class="card-section">
+          <h4><%= course.name %></h4>
+          <p><%= course.desc %></p>
+        </div>
+        <div class="card-divider flex-container align-left align-bottom">
+          <button class="button-primary" href="/course-detail/<%= course.id %>">Learn More</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  
+  <% }) %>
 
-<% }) %>
+</div>
