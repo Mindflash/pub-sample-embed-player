@@ -9,10 +9,9 @@ const app = new Koa();
 
 app.use(async (ctx, next) => {
   const start = Date.now();
-  console.log(`${start} ${ctx.method} ${ctx.url}`);
   await next();
   const ms = Date.now() - start;
-  console.log(`>> ${start} ${ctx.method} ${ctx.url} - ${ms}`);
+  console.log(`>> ${new Date(start).toISOString()} ${ctx.method} ${ctx.url} - ${ms}`);
 });
 
 app.use(require('koa-static')('public'));
