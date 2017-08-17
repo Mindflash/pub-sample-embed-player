@@ -1,0 +1,260 @@
+@media print, screen and (min-width: 90em) {
+	.xlarge-1 {
+		-ms-flex: 0 0 8.33333%;
+		flex: 0 0 8.33333%;
+		max-width: 8.33333%; }
+	.xlarge-offset-0 {
+		margin-left: 0%; }
+	.xlarge-2 {
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%; }
+	.xlarge-offset-1 {
+		margin-left: 8.33333%; }
+	.xlarge-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%; }
+	.xlarge-offset-2 {
+		margin-left: 16.66667%; }
+	.xlarge-4 {
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%; }
+	.xlarge-offset-3 {
+		margin-left: 25%; }
+	.xlarge-5 {
+		-ms-flex: 0 0 41.66667%;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%; }
+	.xlarge-offset-4 {
+		margin-left: 33.33333%; }
+	.xlarge-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%; }
+	.xlarge-offset-5 {
+		margin-left: 41.66667%; }
+	.xlarge-7 {
+		-ms-flex: 0 0 58.33333%;
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%; }
+	.xlarge-offset-6 {
+		margin-left: 50%; }
+	.xlarge-8 {
+		-ms-flex: 0 0 66.66667%;
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%; }
+	.xlarge-offset-7 {
+		margin-left: 58.33333%; }
+	.xlarge-9 {
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%; }
+	.xlarge-offset-8 {
+		margin-left: 66.66667%; }
+	.xlarge-10 {
+		-ms-flex: 0 0 83.33333%;
+		flex: 0 0 83.33333%;
+		max-width: 83.33333%; }
+	.xlarge-offset-9 {
+		margin-left: 75%; }
+	.xlarge-11 {
+		-ms-flex: 0 0 91.66667%;
+		flex: 0 0 91.66667%;
+		max-width: 91.66667%; }
+	.xlarge-offset-10 {
+		margin-left: 83.33333%; }
+	.xlarge-12 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%; }
+	.xlarge-offset-11 {
+		margin-left: 91.66667%; }
+	.xlarge-up-1 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-1 > .column, .xlarge-up-1 > .columns {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%; }
+	.xlarge-up-2 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-2 > .column, .xlarge-up-2 > .columns {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%; }
+	.xlarge-up-3 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-3 > .column, .xlarge-up-3 > .columns {
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%; }
+	.xlarge-up-4 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-4 > .column, .xlarge-up-4 > .columns {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%; }
+	.xlarge-up-5 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-5 > .column, .xlarge-up-5 > .columns {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%; }
+	.xlarge-up-6 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-6 > .column, .xlarge-up-6 > .columns {
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%; }
+	.xlarge-up-7 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-7 > .column, .xlarge-up-7 > .columns {
+		-ms-flex: 0 0 14.28571%;
+		flex: 0 0 14.28571%;
+		max-width: 14.28571%; }
+	.xlarge-up-8 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xlarge-up-8 > .column, .xlarge-up-8 > .columns {
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%; }
+}
+
+@media print, screen and (min-width: 120em) {
+	.xxlarge-1 {
+		-ms-flex: 0 0 8.33333%;
+		flex: 0 0 8.33333%;
+		max-width: 8.33333%; }
+	.xxlarge-offset-0 {
+		margin-left: 0%; }
+	.xxlarge-2 {
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%; }
+	.xxlarge-offset-1 {
+		margin-left: 8.33333%; }
+	.xxlarge-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%; }
+	.xxlarge-offset-2 {
+		margin-left: 16.66667%; }
+	.xxlarge-4 {
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%; }
+	.xxlarge-offset-3 {
+		margin-left: 25%; }
+	.xxlarge-5 {
+		-ms-flex: 0 0 41.66667%;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%; }
+	.xxlarge-offset-4 {
+		margin-left: 33.33333%; }
+	.xxlarge-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%; }
+	.xxlarge-offset-5 {
+		margin-left: 41.66667%; }
+	.xxlarge-7 {
+		-ms-flex: 0 0 58.33333%;
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%; }
+	.xxlarge-offset-6 {
+		margin-left: 50%; }
+	.xxlarge-8 {
+		-ms-flex: 0 0 66.66667%;
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%; }
+	.xxlarge-offset-7 {
+		margin-left: 58.33333%; }
+	.xxlarge-9 {
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%; }
+	.xxlarge-offset-8 {
+		margin-left: 66.66667%; }
+	.xxlarge-10 {
+		-ms-flex: 0 0 83.33333%;
+		flex: 0 0 83.33333%;
+		max-width: 83.33333%; }
+	.xxlarge-offset-9 {
+		margin-left: 75%; }
+	.xxlarge-11 {
+		-ms-flex: 0 0 91.66667%;
+		flex: 0 0 91.66667%;
+		max-width: 91.66667%; }
+	.xxlarge-offset-10 {
+		margin-left: 83.33333%; }
+	.xxlarge-12 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%; }
+	.xxlarge-offset-11 {
+		margin-left: 91.66667%; }
+	.xxlarge-up-1 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-1 > .column, .xxlarge-up-1 > .columns {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%; }
+	.xxlarge-up-2 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-2 > .column, .xxlarge-up-2 > .columns {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%; }
+	.xxlarge-up-3 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-3 > .column, .xxlarge-up-3 > .columns {
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%; }
+	.xxlarge-up-4 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-4 > .column, .xxlarge-up-4 > .columns {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%; }
+	.xxlarge-up-5 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-5 > .column, .xxlarge-up-5 > .columns {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%; }
+	.xxlarge-up-6 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-6 > .column, .xxlarge-up-6 > .columns {
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%; }
+	.xxlarge-up-7 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-7 > .column, .xxlarge-up-7 > .columns {
+		-ms-flex: 0 0 14.28571%;
+		flex: 0 0 14.28571%;
+		max-width: 14.28571%; }
+	.xxlarge-up-8 {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap; }
+	.xxlarge-up-8 > .column, .xxlarge-up-8 > .columns {
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%; } }
