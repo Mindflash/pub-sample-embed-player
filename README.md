@@ -16,16 +16,16 @@ npm start
 The server should start listening on port 7001. Open a browser and point to `http://localhost:7001?testEmail=a-trainee-in-your-portal@example.com`. Be sure to use the email address of a user in your Mindflash account. This simulates the connection between your system and Mindflash. In a real implementation, you should use a signed url (like a JWT) or somehow directly supply the userId/email to verifyAuthCreds.js.
 
 ### Obtaining a user token
-**GET**  `https://xapi.mindflash.com/v3a/token?email=<trainee email>`
+**GET**  `https://xapi.mindflashtms.com/v3a/token?email=<trainee email>`
 
-**GET**  `https://xapi.mindflash.com/v3a/token?id=<trainee id>`
+**GET**  `https://xapi.mindflashtms.com/v3a/token?id=<trainee id>`
 
 This endpoint returns basic user info along with a time-limited token you can use in other extended API calls. This token is specific to the user and expires after 90 minutes. This token is designed to be sent to a client single-page app, allowing it to make extended API calls directly. Of course, the token can still be used in a server-rendered app such as in this sample project.
 
 This endpoint requires your account secret key in the `x-mindflash-apikey` header. Do not put your account secret key in a client app. Make this call from the server and send the token to the client app instead.
 
 ###### Example
-`curl 'https://xapi.mindflash.com/v3a/token?id=12345678' -H 'x-mindflash-Apikey: <your account secret key>'`
+`curl 'https://xapi.mindflashtms.com/v3a/token?id=12345678' -H 'x-mindflash-Apikey: <your account secret key>'`
 
 ```javascript
 {
@@ -39,12 +39,12 @@ This endpoint requires your account secret key in the `x-mindflash-apikey` heade
 
 
 ### Get trainee course data
-**GET**  `https://xapi.mindflash.com/v3a/trainee-courses`
+**GET**  `https://xapi.mindflashtms.com/v3a/trainee-courses`
 
 This endpoint returns comprehensive data about the courses a trainee has access to. This includes not only courses they have been invited to directly, but also any courses they have access to via catalogs (respecting group membership). Much of what you will need to build a custom trainee dashboard/overview experience is contained in this call. Note that you cannot specify the user for which to fetch this data -- that is contained in the user-specific token received above.
 
 ###### Example
-`curl 'https://xapi.mindflash.com/v3a/trainee-courses' -H 'authorization: apWajnolzLku-SAMPLE-rIkgfeglw30='`
+`curl 'https://xapi.mindflashtms.com/v3a/trainee-courses' -H 'authorization: apWajnolzLku-SAMPLE-rIkgfeglw30='`
 
 ```javascript
 [
@@ -106,14 +106,14 @@ There are a few things to take note of here:
 * All IDs are strings, in contrast to our previous API. Do not coerce the IDs to numbers; a future revision may make use of non-numeric IDs.
 
 ### Get embed player url
-**GET**  `https://xapi.mindflash.com/v3a/launch-course/{moduleId}/{courseId}`
+**GET**  `https://xapi.mindflashtms.com/v3a/launch-course/{moduleId}/{courseId}`
 
 This endpoint returns a url suitable for embedding in an iframe. This can be used to provide a seamless training experience in a customer's own application. Both `moduleId` and `courseId` are required.
 
 Note this link directly creates a session for the trainee in Mindflash -- no additional SSO step is required as long as the trainee has been added to Mindflash previously. This can simplify some SSO scenarios, but care should be taken not to post publicly the url returned in this response.  Additionally the trainee also does not need to have been invited to the course or otherwise have access. In other words, this endpoint can be used to bypass group restrictions and enrollment. This can be very useful if you are creating your own catalog based on custom logic not in Mindflash, but care must be taken to enforce permissions.
 
 ###### Example
-`curl 'https://xapi.mindflash.com/v3a/launch-course/19004/196994' -H 'authorization: apWajnolzLku-SAMPLE-rIkgfeglw30='`
+`curl 'https://xapi.mindflashtms.com/v3a/launch-course/19004/196994' -H 'authorization: apWajnolzLku-SAMPLE-rIkgfeglw30='`
 
 ```javascript
 {
