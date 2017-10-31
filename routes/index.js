@@ -3,7 +3,7 @@ const router = new Router();
 
 router.get('/', async function (ctx) {
 	const request = require('../helpers/api-request')(ctx);
-	const courses = await request('https://xapi.mindflash.com/v3a/trainee-courses');
+	const courses = await request('https://xapi.mindflashtms.com/v3a/trainee-courses');
 
 	ctx.state.courses = courses;
 
