@@ -15,7 +15,7 @@ module.exports = async function verifyAuthCreds(ctx, next) {
 	if (userEmail) {
 		// If an email is set, always fetch a fresh token to make this easier to test and switch users without clearing cookies.
 		const creds = await request({
-			url: 'https://xapi.mindflash.com/v3a/token?email=' + userEmail,
+			url: 'https://xapi.mindflashtms.com/v3a/token?email=' + userEmail,
 			headers: { 'x-mindflash-Apikey': cfg.mfKey }
 		});
 
