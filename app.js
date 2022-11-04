@@ -1,11 +1,11 @@
 process.on('unhandledRejection', r => console.error(r));
 
 const Koa = require('koa');
-
 const ejs = require('koa-ejs');
 const path = require('path');
 
 const app = new Koa();
+const port = 7001;
 
 app.use(async (ctx, next) => {
   const start = Date.now();
@@ -25,18 +25,10 @@ app.use(function (ctx, next) {
   return next();
 });
 
-app.use(require('./helpers/verifyAuthCreds'));
-
 app.use(require('./routes/index').routes());
-app.use(require('./routes/courseDetail').routes());
-app.use(require('./routes/viewCourse').routes());
 
-if (process.env.NODE_ENV === 'test') {
-  module.exports = app.callback();
-} else {
-  app.listen(7001);
-  console.log('open http://localhost:7001');
-}
+app.listen(port);
+console.log(`Open http://localhost:${port} in the browser.`);
 
 app.on('error', function (err) {
   console.error(err, err.stack);
